@@ -89,7 +89,7 @@ const refreshPage = () => {
         <div className="result">
           <h3>Results</h3>
           <p>
-            Total Question: <span>{questions.length}</span>
+            Total Questions: <span>{questions.length}</span>
           </p>
           <p>
             Total Score:<span> {result.score}</span>
