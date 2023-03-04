@@ -46,6 +46,8 @@ const Quiz = () => {
 
   const addLeadingZero = (number) => (number > 9 ? number : `0${number}`)
 
+console.log(correctAnswer)
+
   return (
     <div className="quiz-container">
       {!showResult ? (
@@ -90,7 +92,7 @@ const Quiz = () => {
           </p>
           <p>
             Correct Answers:<span> {result.correctAnswers}</span>
-            {result.correctAnswer}
+            
           </p>
           <p>
             Wrong Answers:<span> {result.wrongAnswers}</span>
