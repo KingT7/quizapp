@@ -22,7 +22,7 @@ const Quiz = () => {
       selectedAnswer
         ? {
             ...prev,
-            score: prev.score + 5,
+            score: prev.score + 10,
             correctAnswers: prev.correctAnswers + 1,
           }
         : { ...prev, wrongAnswers: prev.wrongAnswers + 1 }
@@ -90,6 +90,7 @@ const Quiz = () => {
           </p>
           <p>
             Correct Answers:<span> {result.correctAnswers}</span>
+            {result.correctAnswer}
           </p>
           <p>
             Wrong Answers:<span> {result.wrongAnswers}</span>
