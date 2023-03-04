@@ -48,6 +48,10 @@ const Quiz = () => {
 
 console.log(correctAnswer)
 
+const refreshPage = () => {
+  window.location.reload();
+} 
+
   return (
     <div className="quiz-container">
       {!showResult ? (
@@ -97,6 +101,7 @@ console.log(correctAnswer)
           <p>
             Wrong Answers:<span> {result.wrongAnswers}</span>
           </p>
+          <button onClick={refreshPage} className='refresh'> Try Again </button>
         </div>
       )}
     </div>
